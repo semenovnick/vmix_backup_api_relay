@@ -1,0 +1,14 @@
+{
+  "name": "vmix_backup_api_relay",
+  "version": "1.0.0",
+  "description": "Relay app for VMIX API This app will use **_\"Main\"_** and **_\"Backup\"_** VMIX instances. The application analyzes the connection status to the **_Main_** and **_Backup_** VMIX instance. Depending on the state, switches the output of the xml request result from `http://vmixip:vmixport/api`. Thus, simulating one VMIX instance. Requests via `/api?Function=` are duplicated on both **_Main_** and **_Backup_**",
+  "main": "/src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
